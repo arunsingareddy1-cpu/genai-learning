@@ -1,0 +1,16 @@
+L1 = [1,2,3,4]
+L2 = [1,3,2,5,6]
+
+print("List 1:", L1)
+print("List 2:", L2)
+#find the common elements in both lists
+common = list(set(L1) & set(L2))
+print("Common elements:", common)
+#find the element in present in list 1 but not in list 2
+fc = list(set(L1) - set(L2))
+print("Elements in List 1 but not in List 2:", fc)
+fc2 = list(set(L2) - set(L1))
+print("Elements in List 2 but not in List 1:", fc2)
+#find the elements in both lists
+b2 = list(set(L1) | set(L2))
+print("Elements in both lists:", b2)
